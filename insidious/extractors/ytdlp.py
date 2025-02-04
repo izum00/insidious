@@ -1,8 +1,7 @@
+from __future__ import annotations
 # Copyright Insidious authors <https://github.com/xrun1/insidious>
 # SPDX-License-Identifier: AGPL-3.0-or-later
 CACHE_DIR = Path("/root/.cache/insidious")  # または /app/.cache
-
-from __future__ import annotations
 
 import asyncio
 import hashlib
