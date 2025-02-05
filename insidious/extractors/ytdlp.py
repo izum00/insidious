@@ -66,7 +66,6 @@ RawData: TypeAlias = dict[str, Any]
 RequestCallback: TypeAlias = Callable[[YtdlpRequest], None]
 
 MAX_CACHE_TIME = 60 * 60
-CACHE_DIR = Path(appdirs.user_cache_dir(NAME))
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 ExpireIn: TypeAlias = Callable[[float], None]
 
