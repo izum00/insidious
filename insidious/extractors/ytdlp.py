@@ -3,7 +3,7 @@ from __future__ import annotations
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-CACHE_DIR = Path("/app/.cache/insidious")
+CACHE_DIR = Path(os.getenv("INSIDIOUS_CACHE_DIR", "/tmp/.cache/insidious"))
 
 import asyncio
 import hashlib
