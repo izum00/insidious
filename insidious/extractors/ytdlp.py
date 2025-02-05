@@ -3,8 +3,7 @@ from __future__ import annotations
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 from pathlib import Path
-
-CACHE_DIR = Path("/root/.cache/insidious")  # または /app/.cache
+CACHE_DIR = Path.home() / ".cache" / "insidious"  # ホームディレクトリに変更
 
 import asyncio
 import hashlib
